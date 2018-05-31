@@ -8,27 +8,35 @@
     <link href="https://fonts.googleapis.com/css?family=Arsenal:400,700,400i" rel="stylesheet">
     <link rel="stylesheet" href="gallery.css">
     <link rel="stylesheet" href="onepage-scroll.css">
-    <script src="onepagescroll.js"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="img\favicons\favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img\favicons\favicon-16x16.png">
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <script src="jquery.onepage-scroll.js"></script>
 </head>
 <body>
+    
       
 <nav id="tescik">
    
-    <img src="img/logoproto.png" alt="logo" onclick='pokaz0()' class=" menu-logo">
-    <div class="mele m_home active"><a onclick='$(".main").moveTo(3)'>DOMŮ</a></div><!-- pokaz0()-->
-    <div class="mele m_projects"><a href="#">PROJEKTY</a></div>
+    <img src="img/logoproto.png" alt="logo" onclick='$(".main").moveTo(1)' class=" menu-logo">
+    <div class="mele m_home active"><a onclick='$(".main").moveTo(1)'>DOMŮ</a></div><!-- pokaz0()-->
+    <div class="mele m_projects"><a href="Gallery/index.html">PROJEKTY</a></div>
     <div class="mele m_services "><a href="">SLUŽBY +</a>
-    <div class="submenu submenu1"><a onclick='moveTo(".main", 2)'>KONSTRUKCE</a></div>
-    <div class="submenu"><a onclick='moveTo(".main", 3)'>3D TISK</a></div>
-    <div class="submenu"><a onclick='moveTo(".main", 4)'>FORMY</a> </div>
-    <div class="submenu"><a onclick='moveTo(".main", 5)'>POVRCHOVKY</a></div>
+    <div class="submenu submenu1"><a onclick='$(".main").moveTo(2)'>KONSTRUKCE</a></div>
+    <div class="submenu"><a onclick='$(".main").moveTo(3)'>3D TISK</a></div>
+    <div class="submenu"><a onclick='$(".main").moveTo(4)'>FORMY</a> </div>
+    <div class="submenu"><a onclick='$(".main").moveTo(5)'>POVRCHOVKY</a></div>
+    
     
     </div>
-    <div class="mele m_cantact"><a  onclick="openkontakt()">KONTAKT</a></div>
-    <div class="mele m_about"><a  onclick="openonas()">O NÁS</a></div>
+    <div class="mele m_cantact"><a  onclick='$(".main").moveTo(1);openkontakt()'>KONTAKT</a></div>
+    <div class="mele m_about"><a  onclick='$(".main").moveTo(1);openonas()'>O NÁS</a></div>
 </nav>
 <div class="leng">
-  <img src="img/uk.png" class="icon english">
+  <img src="img/uk.png" class="icon english" onclick='window.location.href = "protocastEN/index.html"'>
   <img src="img/cz.png" class="icon czech">
   </div>
 <div id="myModal" class="modal">
@@ -37,22 +45,22 @@
 
     <div class="mySlides">
       <div class="numbertext">1 / 4</div>
-      <img src="img1.jpg" style="width:100%">
+      <img id='sgimg1' src="img1.jpg" style="width:100%">
     </div>
 
     <div class="mySlides">
       <div class="numbertext">2 / 4</div>
-      <img src="img2.jpg" style="width:100%">
+      <img id='sgimg2' src="img2.jpg" style="width:100%">
     </div>
 
     <div class="mySlides">
       <div class="numbertext">3 / 4</div>
-      <img src="img3.jpg" style="width:100%">
+      <img id='sgimg3' src="img3.jpg" style="width:100%">
     </div>
 
     <div class="mySlides">
       <div class="numbertext">4 / 4</div>
-      <img src="img4.jpg" style="width:100%">
+      <img id='sgimg4' src="img4.jpg" style="width:100%">
     </div>
 
     <!-- Next/previous controls -->
@@ -105,13 +113,13 @@
   
      
 <div class="textinfo">
-		<p>KONSTRUKCE</p> 
+		<p onclick='$(".main").moveTo(2)'>KONSTRUKCE</p> 
     <div id="under1" class="underline underline1"></div>
-		<p>3D TISK</p>
+		<p onclick='$(".main").moveTo(3)'>3D TISK</p>
     <div id="under2" class="underline underline2"></div>
-		<p>VAKUOVÉ LITÍ</p>
+		<p onclick='$(".main").moveTo(4)'>VAKUOVÉ LITÍ</p>
     <div id="under3" class="underline underline3"></div>
-		<p>POVRCHOVÉ ÚPRAVY</p>
+		<p onclick='$(".main").moveTo(5)'>POVRCHOVÉ ÚPRAVY</p>
     <div id="under4" class="underline underline4"></div>
 </div>   
 		
@@ -183,21 +191,13 @@
 </div>
 </div>
 <div class="contact"><img class='email' src="img/letter.svg" alt=""></div>
-<div class="gallery"><img class="galeryicon" src="img/gallery.svg" alt=""></div>
+<div class="gallery"><a href="Gallery/index.html">PROJEKTY<img class="galeryicon" src="img/gallery.svg" align="right"></a></div>
 </section>
 
 
 <section id="konstrukce" >
-   
-
-
-    
+     
    <div class="konst-wrapper">
-   <div class="konst-gallery" onclick="openModal()">More Photos<img src="img/gallery2.svg" class='gal-icon'></div>
-
-   
-   
-   
    
     <div class="konst-list">
    
@@ -211,6 +211,7 @@
         <li class="p2">Simulace</li>
         <li class="p3">Vizualizace</li>
         <li class="p4">Reverse engineering</li>
+         <div class="konst-gallery" onclick="openModal('smallgallery/kon1.jpg', 'smallgallery/kon2.jpg', 'smallgallery/kon3.jpg', 'smallgallery/kon4.jpg')">More Photos<img src="img/gallery2.svg" class='gal-icon'></div>
       </ul>
       <div class="text-container"></div>
       </div>
@@ -240,6 +241,7 @@
         <li class="d1">FDM tisk</li>
         <li class="d2">SLA tisk</li>
         <li class="d3">Tisknutelné materiály</li>
+        <div class="konst-gallery" onclick="openModal('smallgallery/tisk1.jpg', 'smallgallery/tisk2.jpg', 'smallgallery/tisk3.jpg', 'smallgallery/tisk4.jpg')">More Photos<img src="img/gallery2.svg" class='gal-icon'></div>
        </ul>
      <div class="text-container2"></div>
        <object class="prob2 shower2 disp">
@@ -269,6 +271,7 @@
         <li class="f2">Odlévání polyuretanových pryskyřic</li>
         <li class="f3">Odlévání epoxidových pryskyřic</li>
         <li class="f4">Vstřikování vytavitelných vosků</li>
+        <div class="konst-gallery" onclick="openModal('smallgallery/cas1.jpg', 'smallgallery/cas2.jpg', 'smallgallery/cas3.jpg', 'smallgallery/cas4.jpg')">More Photos<img src="img/gallery2.svg" class='gal-icon'></div>
        </ul>
        
        <object class="prob3 shower3 ">
@@ -308,6 +311,7 @@
            <li class="o2">Broušení a leštění</li>
            <li class="o3">Lakování a pokovení</li>
            <li class="o4">Montáž a testování</li>
+           <div class="konst-gallery" onclick="openModal('smallgallery/oth1.jpg', 'smallgallery/oth2.jpg', 'smallgallery/oth3.jpg', 'smallgallery/oth4.jpg')">More Photos<img src="img/gallery2.svg" class='gal-icon'></div>
          </ul>
          <div class="text-container4"></div>
          <object class="prob4">
@@ -321,10 +325,7 @@
   
 </section>
  </div>
-<script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+
 <script src="menu.js"></script>
 <script src="resize.js"></script>
 <script src="gallery.js"></script>

@@ -1,6 +1,11 @@
 // Open the Modal
-function openModal() {
-  document.getElementById('myModal').style.display = "block";
+function openModal(f1, f2, f3, f4) {
+  var model = document.getElementById('myModal')
+  model.style.display = "block";
+  document.getElementById("sgimg1").src=f1;
+  document.getElementById("sgimg2").src=f2;
+  document.getElementById("sgimg3").src=f3;
+  document.getElementById("sgimg4").src=f4;
 }
 
 // Close the Modal

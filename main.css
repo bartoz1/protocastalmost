@@ -6,6 +6,36 @@ body{
     background: black;
     font-size: 10px;
 }
+/* Preloader */
+
+#preloader {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  /* change if the mask should have another color then white */
+  z-index: 99;
+  /* makes sure it stays on top */
+}
+
+#status {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  /* centers the loading animation horizontally one the screen */
+  top: 50%;
+  /* centers the loading animation vertically one the screen */
+  background-image: url(https://i.redd.it/ounq1mw5kdxy.gif);
+  /* path to your loading animation */
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -100px 0 0 -100px;
+  /* is width and height divided by two */
+}
 #frstlook{
     display: inline-block;
     width: 100%;
@@ -121,6 +151,10 @@ nav{
     text-decoration: none !important;
     color: #f8eded;
 }
+.gallery a{
+    text-decoration: none;
+    color: white !important;
+}
 .active{
     background: #337ab7;
 }
@@ -156,6 +190,9 @@ nav{
     top: 20%;
     left: 35%;
     text-shadow: #000 1px 0 10px;
+}
+.textinfo p:hover{
+    cursor: pointer;
 }
 .leftmenu{
     font-weight: 700;
@@ -1015,30 +1052,53 @@ d-list{
 }
 
 .galeryicon {
+    width: 50px;
+    margin-left: 20px;
+    transition: width 300ms;
+/*
     width: 100px;
     position: relative;
     right: -50px;
 
     padding: 20px;
     border-radius: 30%;
-    transition: width 300ms;
+*/
 }
 .galeryicon:hover{
-    width: 110px;
+    width: 55px;
+    cursor: pointer;
 }
+.gallery:hover .galeryicon{
+    width: 55px;
+}
+.gallery:hover{
+    cursor: pointer
+    
+}
+
 
 .gallery {
+    text-shadow: #000 1px 0 10px;
     position: absolute;
-    right: 0px;
-    top: 38%;
+    right: -70px;
+    top: 44%;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
     overflow: hidden;
-    transition: width 300ms;
+    transform: rotate(-90deg);
+    transition: font-size 300ms;
+/*
+    padding-bottom: 12px;     
+    background: black;
+*/
+
 }
 
+
 .konst-gallery {
-    position: absolute;
-    left: 45%;
-    bottom: 5%;
+    position: relative;
+    left: 18%;
     width: 70px;
     z-index: 1000;
     text-align:left;
