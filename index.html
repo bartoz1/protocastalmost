@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PROTOCAST</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="dist/hamburgers.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arsenal:400,700,400i" rel="stylesheet">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="onepage-scroll.css">
+    <script src="onepagescroll.js"></script>
+</head>
+<body>
+      
+<nav id="tescik">
+   
+    <img src="img/logoproto.png" alt="logo" onclick='pokaz0()' class=" menu-logo">
+    <div class="mele m_home active"><a onclick='moveTo(".main", 4)'>HOME</a></div><!-- pokaz0()-->
+    <div class="mele m_projects"><a href="#">PROJEKTY</a></div>
+    <div class="mele m_services "><a href="">SLUŽBY +</a>
+    <div class="submenu"><a onclick='pokaz1()'>KONSTRUKCE</a></div>
+    <div class="submenu"><a onclick='pokaz2()'>3D TISK</a></div>
+    <div class="submenu"><a onclick='pokaz3()'>VÝROBA FOREM</a> </div>
+    <div class="submenu"><a onclick='pokaz4()'>DOKONČENÍ</a></div>
+    
+    </div>
+    <div class="mele m_cantact"><a  onclick="openkontakt()">KONTAKT</a></div>
+    <div class="mele m_about"><a  onclick="openonas()">O NÁS</a></div>
+</nav>
+<div class="leng">
+  <img src="img/uk.png" class="icon english">
+  <img src="img/cz.png" class="icon czech">
+  </div>
+    <div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="img1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="img2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="img3.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="img4.jpg" style="width:100%">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+     
+<!--
+    <div class="caption-container">
+      <p id="caption">text</p>
+    </div>
+-->
+
+  </div>
+</div>
+  <div class='main'>
+ <section id="frstlook">
+  
+  <video loop muted autoplay class='bgvideo'>
+      <source src="video/introvideo.mp4" type="video/mp4" class="lel">
+  </video>
+  
+<div class="hoverover">
+   <div class="wht white1"></div>
+    <img id="hov" src="img/hovercut3.png" alt="">
+    <div class="wht white2 "></div>
+     <div class="onhoverover">
+      <ul class="frstnav">
+       <li>
+        <a id="leftmenu">
+         <img class="hamburger" src="img/menu.svg" alt=""><span class="fixe">KONTAKT </span>
+        </a></li>
+       <li>
+        <a id="rightmenu">
+          O NÁS <img class="hamburger" src="img/menu.svg" alt="">  </a>
+       </li>
+      </ul>
+      
+
+  
+    <img src="img/logoprotoblack.png" class="logo1">
+      <h2 class='nomargin'>ZHMOTŇUJEME PŘEDSTAVY</h2>
+      
+     <div class="introtxt">
+      <h4>Jsme specialisté </h4>
+      <h5>na vakuové lití.</h5>
+     </div>
+    </div>
+  </div>
+  
+     
+<div class="textinfo">
+		<p>KONSTRUKCE</p> 
+    <div id="under1" class="underline underline1"></div>
+		<p>3D TISK</p>
+    <div id="under2" class="underline underline2"></div>
+		<p>VAKUOVÉ LITÍ</p>
+    <div id="under3" class="underline underline3"></div>
+		<p>POVRCHOVÉ ÚPRAVY</p>
+    <div id="under4" class="underline underline4"></div>
+</div>   
+		
+<div class="kontakt displaynone">
+<div class="kontwrapper">
+ <img src="img/tomas.jpg" alt=Tomas"">
+ <div class="tom">
+  <span class="whiter">Ing. Tomáš Švejkovský </span><br>
+  Jednatel společnosti <br>
+  tomas.svejkovsky@protocast.cz <br>
+  +420 739 657 714
+ </div>
+
+ <div class="adress">
+  <span class="whiter">FAKTURAČNÍ ADRESA </span> <br>
+  Protocast s.r.o. <br>
+  Dvouletky 509 100 00, Praha 10 <br>
+  IČ 04970497 <br>
+  DIČ CZ04970497 <br>
+ </div>
+ 
+ <div class="adress2">
+  <span class="whiter">PROVOZOVNA </span><br>
+  Protocast s.r.o. <br> 
+  Areál Tesla Hloubětín,<br> 
+  Poděbradská 186/56 <br>
+  198 00, Praha 9 <br>
+ </div>
+
+  <img src="img/cancel.svg" class='cancel'>
+  
+  
+</div>  
+
+<div class="mapwrap">
+<iframe class="mapp" src="https://snazzymaps.com/embed/74599" width="100%" height="100%" style="border:none;"></iframe>
+</div>
+</div>
+
+<div class="about ">
+   <div class="aboutwrapper">
+    <p class="title">KDO JSME</p>
+      <p class='abt-txt'>Firma Protocast s.r.o., založena v roce 2016, vznikla s myšlenkou velmi efektivní prototypové výroby. Jsme profesionální tým zabývající se návrhem a tvorbou funkčních prototypových celků z plastů i kovů. K tvorbě modelů nejčastěji využíváme různé metody 3D tisku v kombinaci s konvenční výrobou. Modely jsou ručně dokončovány a následně zalévány do silikonových forem, ze kterých jsou odlévány hotové produkty z plastů.
+
+      Kromě prototypové výroby pojmeme kapacitně i výrobu malých sérií a jsme schopni zajistit velkosériovou výrobu u našich ověřených partnerů. Poskytujeme zdarma konzultace. Nabízíme možnosti reverse engineeringu. Jsme schopni zajistit jakoukoliv část procesu od 3D modelů a výkresové dokumentace, až k hotovému produktu.</p>
+       <p class="title">NAŠE VYBAVENÍ</p>
+  
+ <ul class="lis abt-txt">
+     <li>
+         CAD Autodesk Fusion 360
+     </li>
+     <li>
+  8x FDM (Fused Deposition Modeling) tiskáren s tiskovou plochou 250x210 mm, z toho 3x ve verzi s vyhřívanou komorou pro ABS a speciální materiály</li>
+  <li>
+1x SLA (Laser stereolitography) tiskárna s tiskovou plochou 145x175 mm, řádkováním 0,025 mm a rozlišením 140 micronů</li>
+  <li>
+4x vakuová komora s průměrem až 600 mm a délkou 1000 mm</li>
+  <li>
+1x autokláv s přetlakováním 7,5 amt, průměrem 350mm a délkou 600mm</li>
+  <li>
+1x pískovací kabina s vnitřními rozměry 1200x600x600 mm</li>
+  <li>
+1x lakovací komora pro díly do 1000 mm</li>
+  <li>
+4x modelář se zlatýma českýma ručičkama
+  </li>
+ </ul>
+</p>
+<img src="img/cancel.svg" class='cancel cancel2'>
+</div>
+</div>
+<div class="contact"><img class='email' src="img/letter.svg" alt=""></div>
+<div class="gallery"><img class="galeryicon" src="img/gallery.svg" alt=""></div>
+</section>
+
+
+<section id="konstrukce" >
+   
+
+
+    
+   <div class="konst-wrapper">
+   <div class="konst-gallery" onclick="openModal()">More Photos<img src="img/gallery2.svg" class='gal-icon'></div>
+
+   
+   
+   
+   
+    <div class="konst-list">
+   
+      <h2>KONSTRUKCE</h2>
+     <div class="absol resizing">
+      <object class=" prob shower">
+          <embed class="showonhover" src="anim/anim3.svg" />
+     </object>
+      <ul class="prob ff">
+        <li class="p1">3D CAD modelování</li>
+        <li class="p2">Simulace</li>
+        <li class="p3">Vizualizace</li>
+        <li class="p4">Reverse engineering</li>
+      </ul>
+      <div class="text-container"></div>
+      </div>
+     <video loop muted  pause class='designvideo' id="kvideo">
+       <source src="video/design.mp4" type="video/mp4" >
+     </video>
+    </div>
+    
+   </div>
+  
+</section>
+
+<section id="d3" >
+   
+    
+   <div class="d-wrapper">
+   
+    <div class="konst-list d-list">
+     
+      <h2>3D TISK</h2>
+     
+        <video loop muted  pause class='printvideo' id="dvideo">
+          <source src="video/3dtisk.mp4" type="video/mp4" >
+        </video>
+     <div class="absol2 ">
+       <ul class="prob2 list2">
+        <li class="d1">FDM tisk</li>
+        <li class="d2">SLA tisk</li>
+        <li class="d3">Tisknutelné materiály</li>
+       </ul>
+     <div class="text-container2"></div>
+       <object class="prob2 shower2 disp">
+          <embed class="showonhover2 disp" src="" />
+      </object>
+     
+     </div>
+     
+    </div>
+    
+   </div>
+  
+</section>
+
+<section id="casting" >
+   
+    
+   <div class="konst-wrapper">
+   
+    <div class="konst-list">
+   
+      <h2>VÝROBA FOREM A ODLÉVÁNÍ</h2>
+     
+     <div class="absol3 resizing">
+       <ul class="lista3">
+        <li class="f1">Vakuové lití do silikonových forem</li>
+        <li class="f2">Odlévání polyuretanových pryskyřic</li>
+        <li class="f3">Odlévání epoxidových pryskyřic</li>
+        <li class="f4">Vstřikování vytavitelných vosků</li>
+       </ul>
+       
+       <object class="prob3 shower3 ">
+          <embed class="showonhover3 " src="" />
+      </object>
+      <div class="text-container3"> </div>
+      
+     </div>
+     
+    </div>
+       
+     <video loop muted  pause class='designvideo' id="cvideo">
+       <source src="video/casting.mp4" type="video/mp4" >
+     </video>
+     
+    </div>
+    
+
+  
+</section>
+
+ <section id="other" >
+   
+    
+   <div class="other-wrapper">
+   
+    <div class="konst-list other-list">
+     
+      <h2>DOKONČENÍ, POVRCHOVÁ ÚPRAVA, MONTÁŽ</h2>
+     
+        <video loop muted pause class='printvideo othervideo' id="ovideo">
+          <source src="video/finish.mp4" type="video/mp4">
+        </video>
+       <div class="absol4">
+         <ul class="lista4">
+           <li class="o1">Pískování a gravírování</li>
+           <li class="o2">Broušení a leštění</li>
+           <li class="o3">Lakování a pokovení</li>
+           <li class="o4">Montáž a testování</li>
+         </ul>
+         <div class="text-container4"></div>
+         <object class="prob4">
+          <embed class="showonhover4" src="" />
+         </object>
+         
+    </div>
+    </div>
+    
+   </div>
+  
+</section>
+ </div>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="menu.js"></script>
+<script src="resize.js"></script>
+<script src="gallery.js"></script>
+
+        
+</body>
+</html>

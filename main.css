@@ -1,0 +1,1119 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arsenal', sans-serif;
+    color: #545454;
+    background: black;
+    font-size: 10px;
+}
+#frstlook{
+    display: inline-block;
+    width: 100%;
+    height: 100vh;;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden !important;
+}
+.bgvideo{
+  position: absolute;
+  right: 0; 
+  bottom: 0px;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+  z-index: -100;
+
+}
+.hamburger{
+    height: 1em;
+    vertical-align:middle;
+    
+}
+fixe{
+    margin-top: 20px;
+}
+.frstnav{
+    text-decoration: none;
+    margin-top: 2vh;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 !important;
+    font-size: 15px
+}
+
+.frstnav li a{
+    text-align: center;
+    justify-content: center;
+}
+
+.hoverover{
+    display: block;
+    width: 36%;
+    max-width: 488px;
+    height: 100vh;
+    text-align: center;
+    text-shadow: none ;
+}
+.onhoverover h2{
+    font-weight: 600;
+/*    font-size: 27px;*/
+    font-size: 1.8em;
+    
+}
+#hov{
+    width: 100%;
+    opacity: 0.9;
+    z-index: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    
+}
+.onhoverover{
+    height: 100vh;
+    width: 36%;
+    max-width: 472px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+ul{
+    margin: 0;
+}
+nav{
+    background: rgba(51, 51, 51, 0.83);
+    height: 40px;
+    text-align:left;
+    padding-left: 1%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: none;   /*flex on scroll*/
+    z-index: 500;
+    transition: display ease-in-out 6000ms;
+}
+.menu-logo{
+    width: 185px;
+    height: 24px;
+    padding-top: 8px;
+}
+.mele{
+    width: 10%;
+    margin-right: 2%; 
+    text-align: center;
+    font-size: 20px;
+    padding-top: 5px;
+}
+.mele:hover{
+    cursor: pointer;
+}
+.mele1{
+    width: 16%;
+}
+.mele a{
+    text-decoration: none !important;
+    color: #f8eded;
+}
+.active{
+    background: #337ab7;
+}
+
+.leng{
+    position: absolute;
+    right: 60px;
+    top: 0 ;
+    width: 50px;;
+    text-align: center;
+    z-index: 3010;
+}
+.icon{
+    position: fixed;
+    margin-top: 7px;
+    margin-right: 10px;
+    width: 25px;
+    transition: width 300ms;
+}
+.icon:hover{
+    width: 29px;
+    cursor: pointer;
+}
+.icon:last-child{
+    margin-left: 50px;
+}
+.textinfo{
+    color: #fff;
+    font-size: 70px;
+    font-size: 4.5em;
+    position: absolute;
+    font-weight: 500 !important;
+    top: 20%;
+    left: 35%;
+    text-shadow: #000 1px 0 10px;
+}
+.leftmenu{
+    font-weight: 700;
+}
+.whiter{
+    color: white;
+}
+.logo1{
+    width: 250px;
+    max-width: 200px;
+    
+}
+.nomargin{
+    margin: 0;
+    padding: 0;
+}
+h2{
+    font-size: 30px;
+}
+.textinfo p{
+    margin: 10px ;
+    margin-top: 20px;
+}
+.introtxt,
+.introtxt h4,
+.introtxt h5{
+    margin-top: 64vh;
+    
+    padding-left: 5%;
+    text-align: left;
+    font-size: 25px;
+    font-weight: 600 !important;
+}
+
+h4, h5{
+    margin: 0 !important;
+}
+.introtxt h5{
+  padding-left: 20%;  
+}
+
+.underline {
+    width: 37%;
+    height: 4px;
+    background: white;
+    position: relative;
+    animation: undli 11s infinite;
+    animation-play-state: play;
+    animation-timing-function: ease-in-out;
+    
+}
+.underline2, 
+.underline4{
+    animation: undli 8s infinite;
+    animation-play-state: play;
+}
+.underline3{
+    animation: undli 10s infinite;
+    animation-play-state: play;
+}
+
+.kontakt{
+    position: absolute;
+    width: 36%;
+    max-width: 489px;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    color: white;
+/*    background-color: rgba(47, 47, 47, 0.95);*/
+    background-color: rgba(51, 51, 51, 0.977);
+    
+    animation: ease-in-out 5s;
+    text-shadow: none ;
+    font-size: 20px;
+}
+.kontakt img{
+    width: 100px;
+    justify-self: right;
+     grid-column: span 2;
+}
+.kontwrapper{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 35px;
+    position: relative;
+    z-index: 50;
+    background: rgba(51,51,51,0.7);
+    
+}
+.tom{
+    padding-top: 20px;
+    grid-column: span 3;
+    justify-self: start;
+    text-align: left;
+}
+.adress{
+    text-align: center;
+    grid-column: span 3;
+    font-size: 18px;
+}
+.adress2{
+     grid-column: span 2;
+    text-align: center;
+    font-size: 18px;
+    margin-right: 20px;
+    margin-left: -50px;
+    margin-bottom: 10px;
+}
+
+.cancel{
+    position: absolute;
+    left: -25px;
+    top: -25px;
+    height: 20px;
+}
+.cancel:hover{
+    cursor: pointer;
+}
+.displaynone{
+    width: 0%;
+    overflow: hidden;
+}
+.test{
+    display: none;
+}
+.cancel2{
+    position: absolute;
+    left: 14px;
+    top: 27px;
+    height: 20px
+}
+.about{
+    position: absolute;
+    color: white;
+    left: 0;
+    top: 0;
+    width: 0%;
+    max-width: 488px;
+    height: 100%;
+    background-color: rgba(47, 47, 47, 0.95);
+    overflow: hidden;
+}
+.aboutwrapper{
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+}
+.title{
+    text-align: center;
+    font-size: 30px;
+    font-size: 5vh;
+    margin: 0;
+   
+}
+#konstrukce{
+    width: 100%;
+    height: 100vh;
+    background: black;
+    color: white;
+    overflow: hidden;
+    
+}
+#konstrukce h2{
+    text-align: center;
+    padding-top: 80px;
+    font-weight: 400 !important;
+/*    font-size: 1.3em;*/
+    font-size: 3vw;
+}
+.konst-wrapper{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.konst-list{
+    font-size: 2em;
+    margin:0;
+    width: 100%;
+    
+}
+.absol{
+    position: absolute;
+    left: 5vw !important;
+    top: 35vh;
+    width: 600px;
+    height: 235px;
+    z-index: 100;
+    transform: scale(1);
+    text-shadow: #000 1px 0 7px;
+}
+.konst-list li{
+    margin-bottom: 25px;
+}
+.ff{
+    position: relative;
+   z-index: 300 !important;
+}
+.ff:hover,
+.lista3:hover,
+.list2:hover,
+.lista4:hover{
+    cursor: default
+}
+
+.prob{
+/*    font-size: 2em;*/
+    font-size: 30px;
+}
+.shower{
+    display: none;
+    position: absolute;
+    top: -16%;
+    left: 70px;
+    width: 570px;
+    z-index: 300;
+    background: transparent;
+}
+.absol2{
+    position: absolute;
+    top: 25%;
+    right: 10%;
+    height: 500px;
+    width: 1000px;
+}
+.shower2{
+    position: absolute;
+    top: 37.1px;
+    right: 5.19%;;
+    width: 600px;
+    
+}
+.prob2{
+    font-size: 40px !important;
+}
+.text-container2{
+    position: absolute;
+    display: none;
+    width: 400px;
+    height: 0; 
+    overflow: hidden;
+    background: coral;
+    top: 24.5%;
+    right: 45%;
+    animation: show2 0.8s 0.85s;
+    animation-fill-mode: forwards;
+    border-radius: 10px 0 0 10px;
+    background: linear-gradient(rgba(195, 193, 193, 0.278431), rgba(195, 193, 193, 0.06));
+    padding-left: 7px;
+    
+}
+.list2{
+    width: 400px !important;
+    font-size: 30px !important;
+    position: absolute;
+    left: 66%;
+    top: 26%;
+    z-index: 300;
+}
+.list2 li{
+    margin-bottom: 30px;
+}
+.disp{
+    display: block;
+}
+.text-container{
+    display: none;;
+    width: 400px;
+    height: 0; 
+    overflow: hidden;
+    background: gray;
+    position: absolute;
+    top: 8.2%;
+    left: 63.9%;
+    padding-left: 10px;
+    animation: show 0.8s 0.85s;
+    animation-fill-mode: forwards;
+    border-radius: 0 10px 10px 0;
+    background: linear-gradient(rgba(195, 193, 193, 0.278431), rgba(195, 193, 193, 0.06));
+}
+.text-container3{
+    position: absolute;
+    display: none;
+    overflow: hidden;
+    width: 400px;
+    height: 0; 
+    background: coral;
+    top: 5.5%;
+    left: 117.5%;
+    animation: show3 1s 0.85s;
+    animation-fill-mode: forwards;
+    border-radius: 0 10px 10px 0;
+    background: linear-gradient(rgba(195, 193, 193, 0.278431), rgba(195, 193, 193, 0.06));
+    z-index: 900 !important;
+    padding-left: 7px;
+    
+}
+.absol3{
+    position: absolute;
+    top: 40%;
+    left: 4%;
+    z-index: 20;
+}
+.lista3{
+    width: 400px;
+    position: relative;
+    z-index: 300;
+    font-size: 26px;
+}
+.prob3{
+    position: absolute;
+    z-index: 1 !important;
+    top:-75px;
+    left: 150px;
+    width: 600px
+}
+.prob4{
+    display: none;
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    left: -380px;;
+    top: -67px;
+    z-index: 200;
+}
+.showonhover4{
+}
+.lista3 li{
+    margin-bottom: 30px;
+}
+
+.designvideo{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 700px;;
+    z-index: 2 !important;
+}
+#d3{
+    width: 100%;
+    height: 100vh;
+    background: #333;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    text-shadow: #000 1px 0 10px;
+    
+}
+#d3 h2{
+    margin: 0;
+    text-align: center;
+    padding-top: 100px;;
+    font-weight: 400 !important;
+    font-size: 40px;
+    position: relative;
+    z-index: 200;
+    text-shadow: #000 1px 0 10px;
+}
+
+.printvideo{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+   width: 100%;
+}
+#d3 ul{
+    width: auto;
+    margin: 0 ;
+    overflow: hidden;
+}
+d-list{
+    overflow: hidden;
+}
+
+#casting{
+    background: #18344c;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    text-shadow: #000 1px 0 10px;
+}
+#casting h2{
+    text-align: center;
+    padding-top:4%;
+    font-weight: 400 !important;
+    font-size: 40px;
+    position: relative;
+    z-index: 200;
+}
+#casting ul{
+    position: relative;
+    z-index: 700;
+}
+
+#other{
+    width: 100%;
+    height: 100vh;
+    background: #2b2b2b;
+    overflow: hidden;
+    position: relative;
+}
+#other h2{
+    text-align: center;
+    padding-top:40px;
+    font-weight: 400 !important;
+    font-size: 40px;
+    color: white;
+    position: relative;
+    z-index: 20;
+}
+.othervideo{
+/*    width: 700px;*/
+/*    width: 100%;*/
+    width: 100%;
+}
+#other ul{
+    color: white;
+    font-size: 34px;
+}
+
+
+
+
+
+.showonhover3 {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 400;
+    
+}
+
+.absol4 {
+    position: absolute;
+    right: 10%;
+    top: 220px;
+    transform: scale(1)
+}
+.text-container4{
+    position: absolute;
+    display: none;
+    overflow: hidden;
+    width: 400px;
+    height: 0; 
+    background: coral;
+    top: 27.5px;
+    right: 437.4px;
+    animation: show4 1s 0.85s;
+    animation-fill-mode: forwards;
+    border-radius: 10px 0 0 10px;
+    background: linear-gradient(rgba(195, 193, 193, 0.278431), rgba(195, 193, 193, 0.06));
+    z-index: 900 !important;
+    color: white;
+    padding-left: 8px;
+    
+}
+
+.lista4 {
+    position: relative;
+    z-index: 400;
+} 
+.lista4 li{
+    margin-bottom: 25px !important;
+}
+
+#konstrukce h2 {
+    position: relative;
+    font-size: 40px;
+    z-index: 200;
+    margin-top: 0;
+}
+
+
+
+@media only screen and (min-width: 1025px) {
+    .textinfo{
+/*        display: none !important;*/
+        font-size: 70px;
+    }
+}
+@media only screen and (max-width: 1241px) {
+    .kontakt, 
+    .adress,
+    .adress2{
+        font-size: 15px;
+    }
+    .kontwrapper{
+        margin-top: 60px;
+    }
+}
+@media only screen and (max-width: 1201px) {
+    .absol2{
+        right: 1%;
+    }
+    
+}
+
+@media only screen and (max-width: 1024px) {
+    .textinfo{
+/*        display: none !important;*/
+        font-size: 50px;
+    }
+    .kontakt, 
+    .adress,
+    .adress2{
+        font-size: 12px;
+    }
+    .absol3{
+        transform: scale(0.8);
+        left: 10px;
+    }
+    .absol4{
+        transform: scale(0.8);
+    }
+    
+}
+@media only screen and (max-width: 900px) {
+    .absol2{
+        transform: scale(0.8);
+        right: -60px;;
+    }
+    white1{
+        height: 35% !important;
+    }
+    .lis li{
+    font-size: 10px !important;
+    }
+    
+}
+@media only screen and (max-width: 800px) {
+    .leng{
+        display: none;
+    }
+    .mele{
+        font-size: 15px;
+    }
+    .absol{
+        transform: scale(0.8);
+        margin-left: -60px;;
+    }
+    .designvideo{
+        width: 90%;
+    }
+    .absol3{
+        
+        margin-left: -65px !important;
+    }
+    .absol4{
+        transform: scale(0.6);
+    }
+    #other h2{
+        font-size: 30px ;
+    }
+} 
+@media only screen and (max-width: 724px) {
+    .absol2{
+        transform: scale(0.7);
+        right: -140px;
+        top: 100px;
+    }
+    .absol4{
+        right: -20px;
+    }
+    .absol3{
+        transform: scale(0.6);
+        
+    }
+}
+@media only screen and (max-width: 671px) {
+    .menu-logo{
+        width: 150px;
+        height: 30px;
+        margin-top: 0px;;
+    }
+    .textinfo{
+        font-size: 40px;
+    }
+    .introtxt h4, 
+    .introtxt h5{
+        font-size: 15px !important;
+    }
+     .mele{
+        font-size: 12px;
+    }
+    .absol2{
+        transform: scale(0.6);
+        right: -225px;
+    }
+    .printvideo{
+        width: 100%;
+    }
+    .absol4{
+        right: -40px;
+    }
+    .about .title{
+        font-size: 20px;
+    }
+    
+} 
+@media only screen and (max-width: 600px) {
+    .absol{
+        transform: scale(0.6);
+        margin-left: -130px;
+        
+    }
+    .absol3{
+        margin-left: -99px !important;
+    }
+    
+}
+@media only screen and (max-width: 580px){
+    .leng{
+        display: none;
+    }
+    .kontakt{
+        display: none;
+        width: 100%;
+    }
+    .absol3{
+        transform: scale(0.5);
+    }
+}
+@media only screen and (max-width: 505px){
+    .textinfo{
+        display: none;
+    }
+    .hoverover{
+        width: 100% ;
+    }
+    .onhoverover{
+        width: 100%;
+    }
+    
+}
+@media only screen and (max-width: 500px){
+    .absol{
+        transform: scale(0.4);
+        margin-left: -190px;
+    }
+    .absol4{
+        transform: scale(0.5);
+        right: -60px;
+    }
+    .absol3{
+        transform: scale(0.4);
+    }
+    .absol2{
+        transform: scale(0.5);
+        right: -269px;
+        top: 50px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .absol3{
+        transform: scale(0.3);
+        margin-left: -150px;
+    }
+    .menu-logo{
+        width: 100px;
+        height: 20px;
+        margin-top: 5px;;
+    }
+    .absol4{
+        transform: scale(0.4);
+        right: -80px;
+    }
+    .absol2{
+        transform: scale(0.4);
+        right: -310px;
+    }
+}
+@media only screen and (max-width: 380px){
+    .absol4{
+        right: -90px;
+    }
+    .absol3{
+        transform: scale(0.27);
+        left: -11px;
+    }
+    .absol2{
+        transform: scale(0.3);
+        right: -360px;
+    }
+}
+
+@media only screen and (max-width: 300px){
+    .absol{
+        transform: scale(0.25);
+        top: 80px;
+        left: -20px !important;
+    }
+    .absol4{
+        transform: scale(0.27);
+        right: -120px;
+    }
+    .absol3{
+        margin-left: -150px !important;
+    }
+}
+
+#tescik {
+    
+}
+
+
+.p1t::before{
+    content: 'Potřebujete vyvinout část, nebo kompletní produkt dle Vašich představ? Využíváme CAD řešení firmy Autodesk k tvorbě 2D i 3D dokumentace, ale i k jednoduchým návrhům a produktovému designu.';
+}
+.p2t::before{
+    content: 'Nejste si jisti, že Váš produkt vydrží předpokládaná namáhání? Umíme simulovat pevnostní a tepelné zatížení konstrukcí a to jak statické, tak dynamické  - Statická pevnost  - Modální analýza  - Teplotní zatížení  - Vzpěr ';
+}
+.p3t::before{
+    content: 'Chcete vidět Váš produkt před zahájením výroby? Provádíme realistický rendering, aby si zákazník udělal tu nejlepší představu o svém produktu.  - Realistický rendering  - Montážní rozpady  - Montážní video návody'
+}
+.p4t::before{
+    content: 'Máte předmět, který potřebujete vyrobit z jiného materiálu, zkopírovat, nebo vytvořit dokumentaci? Jsme ta pravá firma přesně pro Vás.  - 3D skenování  - Měření  - Překreslování do 3D i 2D '
+}
+
+
+.d1t::before{
+    content: 'Jedná se o levnou technologii vrstvení termoplastických materiálů. Metoda je vhodná pro velké díly s rozměrovou odchylkou do 0,4%, kde není kladen velký důraz na kvalitu povrchu. Tiskneme ve vrstvách 0,15 - 0,25 mm.'
+}
+.d2t::before{
+    content: 'Velmi kvalitní tisk, kde je model vytvářen spékáním světlocitlivé pryskyřice laserem. Výška tisknuté vrstvy je 25 μm a rozlišení ve vodorovných směrech 140 μm. Metoda je vhodná zejména pro výrobu prototypů vstřikovaných dílů jako světlomety nebo kryty spotřební elektroniky.'
+}
+.d3t::before{
+    content: 'Materiály se liší pro FDM a SLA technologii. Po kliknutí na odkaz se Vám stáhne přehled materiálů s technickými parametry FDM SLA'
+}
+.f1t::before{
+    content: 'Potřebujete více kopií Vašeho produktu, nebo docílit speciálních vlastností, které není možné vytvořit 3D tiskem? Pak potřebujete nás. Umíme vyrábět velmi komplexní silikonové formy a odlévat ve vakuu díly až 600 x 1000 mm. Pro vytvoření dokonalého odlitku následně směsi stlačujeme v tlakové nádobě o rozměrech 350 x 600 mm.'
+}
+.f2t::before{
+    content: 'Polyuretan je ideální dvousložkový materiál pro odlévání. Existuje nepřeberné množství tvrdých, průžných, transparentních i pěnových směsí, proto jsme schopni najít ten správný materiál přesně pro Vás. Základní přehled vlastností našich materiálů naleznete zde. Nebo nás neváhejte kontaktovat.'
+}
+.f3t::before{
+    content: 'Epoxidové dvousložkové pryskyřice využíváme ve speciálních aplikacích, kde polyuretanové směsi nestačí. Jedná se především o zalévání elektroniky tepelně vodivými pryskyřicemi s vysokým elektrickým odporem nebo výrobu tvářecích a lisovacích přípravků.'
+}
+.f4t::before{
+    content: 'Vyrábíme voskové modely pro slévárny a šperkaře.'
+}
+
+.o1t::before{
+    content: 'Potřebujete docílit sjednoceného vzhledu Vašeho 3D tisku, nebo jiného dílu? My Vám díly opískujeme, vypískujeme grafiku, nebo laserem vygravírujeme co si jen budete přát. Pískujeme a gravírujeme téměř všechny druhy povrchů.'
+}
+.o2t::before{
+    content: 'Pokud požadujete dokonale hladký povrch Vašeho 3D tisku, nebo jiného dílu? My Vám díly ručně vybrousíme, případně rozleštíme až na samou hranici technických možností.'
+}
+.o3t::before{
+    content: 'Lakování nám také není cizí. V naší lakovně Vám nalakujeme díly od hlubokého matu, až po vysoký lesk jakoukoliv barvou dle vzorníku RAL. Používáme dvousložkové polyuretanové, nebo jednosložkové akrylové barvy. Pokud potřebujete díly pokovit - od měděné, přes stříbrnou až po zlatou, jste na správném místě.'
+}
+.o4t::before{
+    content: 'Požadujete řešení na klíč? My Vám vyrobené díly změříme, namontujeme a otestujeme jejich funkčnost. Nic není problém.'
+}
+
+
+
+
+
+
+.wht {
+    width: 100%;
+    height: 35%;
+    background: rgba(255,255,255, 0.9)
+}
+
+.white2 {
+    margin-top: -3px;
+    height: 100%;
+}
+
+.white1 {
+    height: 35%;
+    max-height: 310px;
+}
+
+.abt-txt {
+    font-size: 2.2vmin;
+}
+
+
+@keyframes undli {
+    
+    0%{width: 1%;opacity: 0}
+    70%{width: 100%;opacity: 1;}
+    100%{width: 1%;opacity: 0;}
+}
+
+@keyframes show{
+    0% {
+        height: 0px;
+    }
+    100%{
+        height: 192px;
+    }
+}
+@keyframes show2{
+    0% {
+        height: 0px;
+    }
+    100%{
+        height: 200px;
+    }
+}
+@keyframes show3{
+    0% {
+        height: 0px;
+    }
+    100%{
+        height: 202px;
+    }
+}
+@keyframes show4{
+    0% {
+        height: 0px;
+    }
+    100%{
+        height: 203px;
+    }
+}
+
+
+.contact {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    width: 50px;
+    z-index: 500;
+    transition: width 300ms;
+}
+.contact:hover{
+    cursor: pointer;
+}
+.contact:hover{
+    width: 55px;
+}
+
+.email {
+    width: 100%;
+    height: 100%;
+}
+
+.mapp {
+    opacity: 1;
+}
+
+.mapwrap {
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index: 30;
+}
+
+.galeryicon {
+    width: 100px;
+    position: relative;
+    right: -50px;
+
+    padding: 20px;
+    border-radius: 30%;
+    transition: width 300ms;
+}
+.galeryicon:hover{
+    width: 110px;
+}
+
+.gallery {
+    position: absolute;
+    right: 0px;
+    top: 38%;
+    overflow: hidden;
+    transition: width 300ms;
+}
+
+.konst-gallery {
+    position: absolute;
+    left: 45%;
+    bottom: 5%;
+    width: 70px;
+    z-index: 1000;
+    text-align:left;
+    font-size: 13px;
+    transition: width 300ms;
+}
+.konst-gallery:hover{
+    width: 75px;
+    cursor: pointer;
+}
+   
+}
+.konst-gallery:hover{
+    cursor: pointer;
+}
+
+.submenu {
+    display: none;
+    background: rgba(51, 51, 51, 0.83);
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.submenu:hover{
+    background: #337ab7;
+}
+
+.m_services:hover .submenu{
+    display: block;
+}
+
+
+@media only screen and (min-width: 1605px) {
+    .textinfo{
+        font-size: 80px ;
+    }
+    .contact{
+        width: 80px;
+        right: 50px;
+        bottom: 50px;
+    }
+    .contact:hover{
+        width: 90px;
+    }
+    .abt-txt{
+        font-size: 1.9vh
+    }
+    .designvideo{
+        width: 1100px
+    }
+    #konstrukce h2,
+    #d3 h2,
+    #casting h2{
+        font-size: 90px ;
+    }
+    
+    #other h2{
+        font-size: 50px;
+    }
+    .absol4{
+    
+    }
+}
+@media only screen and (min-width: 1905px) {
+    .textinfo{
+        top: 15%;
+        font-size: 100px ;
+    }
+}
+
+
+
+.lis {
+    padding-top: 10px;
+    margin-left: -20px
+}
+
+

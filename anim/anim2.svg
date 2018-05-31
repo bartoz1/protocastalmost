@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   viewBox="-246 355.105 118.737 82.895" style="enable-background:new -246 355.105 118.737 82.895;" xml:space="preserve">
+   <style type="text/css">
+  .st0{fill:none;stroke:#FFFFFF;stroke-width:0.5;stroke-miterlimit:10;}
+
+  #XMLID_1_ {
+  stroke-miterlimit:10;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 10s linear forwards;
+  }
+
+    #XMLID_2_ {
+  stroke-miterlimit:10;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 10s linear forwards;
+  animation-delay: 0.1s;
+  fill:white;
+  }
+
+    #XMLID_3_ {
+  stroke-miterlimit:10;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 10s linear forwards;
+  animation-delay: 0.3s;
+  fill:white;
+  }
+
+      #XMLID_4_ {
+  stroke-miterlimit:10;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation-name: dash2;
+  animation-duration: 1.5s; 
+  animation-delay: -0.7s;
+  animation-fill-mode: forwards;
+  animation-play-state: running; 
+  fill:white;
+  animation-timing-function: linear;
+  }
+       #XMLID_83_ {
+  stroke-miterlimit:10;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation-name: dash;
+  animation-duration: 15s; 
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  fill:white;
+  animation-timing-function: linear;
+
+  }
+
+
+  @keyframes dash {
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+  @keyframes dash2 {
+
+from {
+  stroke-dashoffset:-100;
+}
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+</style>
+<line id="XMLID_1_" class="st0" x1="-201.23" y1="367.355" x2="-194.544" y2="367.355"/>
+<line id="XMLID_2_" class="st0" x1="-194.544" y1="367.355" x2="-194.544" y2="387.115"/>
+<line id="XMLID_3_" class="st0" x1="-194.544" y1="386.884" x2="-180.669" y2="386.884"/>
+<line id="XMLID_4_" class="st0" x1="-180.669" y1="366.568" x2="-180.669" y2="387.357"/>
+<line id="XMLID_83_" class="st0" x1="-180.669" y1="386.398" x2="-180.669" y2="407.188"/>
+</svg>

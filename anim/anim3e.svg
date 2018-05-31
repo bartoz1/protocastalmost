@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="-246 355.105 118.737 82.895" style="enable-background:new -246 355.105 118.737 82.895;" xml:space="preserve">
+<style type="text/css">
+  .st0{fill:none;stroke:#FFFFFF;stroke-width:0.5;stroke-miterlimit:10;}
+
+  #XMLID_1_ {
+  stroke-miterlimit:10;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation-name: dash2;
+  animation-duration: 1.5s; 
+  animation-delay: -1.4s;
+  animation-fill-mode: forwards;
+  animation-play-state: running; 
+  fill:white;
+  animation-timing-function: linear;
+  }
+
+    #XMLID_2_ {
+  stroke-miterlimit:10;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation-name: dash2;
+  animation-duration: 1.5s; 
+  animation-delay: -1.3s;
+  animation-fill-mode: forwards;
+  animation-play-state: running; 
+  fill:white;
+  animation-timing-function: linear;
+  }
+
+    #XMLID_3_ {
+   stroke-miterlimit:10;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation-name: dash2;
+  animation-duration: 1.5s; 
+  animation-delay: -1.1s;
+  animation-fill-mode: forwards;
+  animation-play-state: running; 
+  fill:white;
+  animation-timing-function: linear;
+  }
+
+      #XMLID_4_ {
+  stroke-miterlimit:10;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation-name: dash2;
+  animation-duration: 1.5s; 
+  animation-delay: -0.7s;
+  animation-fill-mode: forwards;
+  animation-play-state: running; 
+  fill:white;
+  animation-timing-function: linear;
+  }
+       #XMLID_83_ {
+  stroke-miterlimit:10;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation-name: dash;
+  animation-duration: 15s; 
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  fill:white;
+  animation-timing-function: linear;
+
+  }
+
+
+  @keyframes dash {
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+  @keyframes dash2 {
+
+from {
+  stroke-dashoffset:-100;
+}
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+</style>
+<line id="XMLID_1_" class="st0" x1="-174.516" y1="399.855" x2="-166.921" y2="399.855"/>
+<line id="XMLID_2_" class="st0" x1="-174.375" y1="394.033" x2="-174.375" y2="399.855"/>
+<line id="XMLID_3_" class="st0" x1="-188.25" y1="394.033" x2="-174.375" y2="394.033"/>
+<line id="XMLID_4_" class="st0" x1="-188.25" y1="373.717" x2="-188.25" y2="394.506"/>
+<line id="XMLID_83_" class="st0" x1="-188.25" y1="393.547" x2="-188.25" y2="414.337"/>
+</svg>
