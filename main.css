@@ -238,7 +238,7 @@ h4, h5{
      grid-column: span 2;
 }
 .kontwrapper{
-    margin-top: 50px;
+    padding-top: 50px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 35px;
@@ -270,7 +270,7 @@ h4, h5{
 .cancel{
     position: absolute;
     left: -25px;
-    top: -25px;
+    top: 25px;
     height: 20px;
 }
 .cancel:hover{
@@ -1117,3 +1117,9 @@ d-list{
 }
 
 
+
+
+
+.submenu1 {
+    margin-top: 10px;
+}

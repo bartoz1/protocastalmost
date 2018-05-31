@@ -35,8 +35,7 @@ function showSlides(n) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
+  
 }
 
 function pokaz0(){
@@ -76,4 +75,12 @@ function pokaz5(){
 //    $('html, body').animate({
 //        scrollTop: $("#frstlook").offset().top
 //    }, 600);
+}
+
+var modal = document.getElementById('myModal');
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        closeModal();
+    }
 }

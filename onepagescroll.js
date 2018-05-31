@@ -13,7 +13,9 @@
  * License: GPL v3
  *
  * ========================================================== */
-	
+var slideIndex;
+
+
 function onePageScroll(element, options) {
   
   var defaults = {
